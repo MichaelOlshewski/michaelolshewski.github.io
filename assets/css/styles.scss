@@ -11,8 +11,8 @@ light-gray: #ccc,
 light-green: #66FCF1,
 medium-green: #45A29E,
 white: #fff,
-red: #E87770,
-red-focus: darken(#E87770, 15%),
+haze-red: #E87770,
+haze-red-focus: darken(#E87770, 15%),
 black: #000,
 );
 @function color($color-name) {
@@ -82,7 +82,7 @@ body {
         font-size: 28px;
     }
     .spanDC {
-        color: color(red)
+        color: color(haze-red)
     }
     header nav {
         float: right;
@@ -113,7 +113,7 @@ body {
     }
     header nav ul li a:hover {
         text-decoration: none;
-        color: color(red);
+        color: color(haze-red);
         transition: 0.15s;
     }
     header nav ul li a:hover.active {
@@ -123,7 +123,7 @@ body {
     }
     header nav ul li a:focus {
         text-decoration: none;
-        color: color(red-focus);
+        color: color(haze-red-focus);
     }
     header nav ul li a:focus.active {
         text-decoration: none;
@@ -138,7 +138,7 @@ body {
         display: block;
     }
     .menu-toggle:hover {
-        color: color(red);
+        color: color(haze-red);
     }
     footer {
         bottom: 0;
@@ -179,7 +179,7 @@ body {
         width: 100px;
         text-decoration: none;
         color: white;
-        background-color: color(red);
+        background-color: color(haze-red);
     }
     .btn:hover {
         background-color: color(red-focus);
@@ -234,7 +234,7 @@ body {
             width: 100px;
             text-decoration: none;
             color: white;
-            background-color: color(red);
+            background-color: color(haze-red);
         }
         .btn:hover {
             background-color: color(red-focus);
@@ -281,7 +281,7 @@ body {
             width: 100spx;
             text-decoration: none;
             color: white;
-            background-color: color(red);
+            background-color: color(haze-red);
         }
         .btn:hover {
             background-color: color(red-focus);
@@ -325,7 +325,7 @@ body {
             width: 75px;
             text-decoration: none;
             color: white;
-            background-color: color(red);
+            background-color: color(haze-red);
         }
         .btn:hover {
             background-color: color(red-focus);
@@ -360,11 +360,11 @@ body {
 }
 
 .side-nav a:hover {
-    color: color(red);
+    color: color(haze-red);
 }
 
 .side-nav a.active {
-    color: color(red);
+    color: color(haze-red);
 }
 
 .side-nav .btn-close {
@@ -375,5 +375,14 @@ body {
     margin-left: 50px;
 }
 
+.email {
+    text-decoration: none;
+    color: color(black)
+}
 
+.email:hover {
+    transition: all 0.2s ease;
+    text-decoration: underline;
+    color: color(haze-red)
+}
 /* Main Content Components */
